@@ -31,7 +31,7 @@ Estudo: 4 ferramentas AutoML × **12 datasets** × 5 seeds (42–46), orçamento
 | só datasets sem falha (N = 10) | 2,10 / 2,40 / **2,00** / 3,50 | 0,036 | H2O × TPOT (p = 0,046) |
 | só etapa inicial (N = 8) | 2,13 / 2,63 / **1,88** / 3,38 | 0,098 | — |
 
-Leitura honesta: **H2O, FLAML e AutoGluon são tecnicamente empatados**; **TPOT é o último em todas as análises** e só se separa significativamente do H2O (e do FLAML no MAE) em análises exploratórias. RMSE relativo ao melhor (média geométrica): H2O 1,05 · FLAML 1,11 · AutoGluon 1,24 · TPOT 1,53; sem Brazilian Houses: AutoGluon 1,01 · FLAML 1,04 · H2O 1,05 · TPOT 1,39.
+Leitura dos resultados: **H2O, FLAML e AutoGluon são tecnicamente empatados**; **TPOT é o último em todas as análises** e só se separa significativamente do H2O (e do FLAML no MAE) em análises exploratórias. RMSE relativo ao melhor (média geométrica): H2O 1,05 · FLAML 1,11 · AutoGluon 1,24 · TPOT 1,53; sem Brazilian Houses: AutoGluon 1,01 · FLAML 1,04 · H2O 1,05 · TPOT 1,39.
 
 **Execuções e falhas (`tabelas/falhas.csv`, `execucoes_validas_por_celula.csv`):** válidas AutoGluon 49 · FLAML 60 · H2O 60 · TPOT 48.
 - AutoGluon: News Popularity (seeds 42–45 falharam por "Not enough time left", após 565–1.342 s; seed 46 não tentada), Santander (42–44 encerradas no limite rígido de 1.200 s; 45–46 não tentadas), Black Friday seed 45 (erro interno "Learner is already fit", 58 s, causa não investigada).

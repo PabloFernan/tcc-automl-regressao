@@ -21,7 +21,7 @@ common/            código-fonte
   consolidar.py      resumo rápido dos resultados
   analise_final.py   tabelas, testes estatísticos e figuras
   analise_brazilian.py, analise_autogluon_diagnostico.py   análise complementar do Brazilian Houses
-notebooks/         notebooks de execução no Colab (rodar_novos_datasets, retomar_execucao, diagnóstico do AutoGluon)
+notebooks/         executar_experimentos.ipynb (coleta no Colab, retomável) e diagnostico_autogluon_brazilian.ipynb
 resultados/        um JSON por execução ({ferramenta}__{dataset}__seed{n}.json), previsões (.npz) e falhas (.falha)
 analise_final/     tabelas (CSV e XLSX), figuras (PNG) e LEIA-ME_resultados.md com a leitura dos resultados
 ```
@@ -36,7 +36,7 @@ python common/analise_brazilian.py
 As tabelas e figuras são geradas novamente em `analise_final/`.
 
 ## Como reproduzir os experimentos
-Os experimentos foram executados no Google Colab. Os notebooks em `notebooks/` instalam as versões fixas das ferramentas (ver `requirements.txt`), montam o Google Drive e chamam `common/runner.py`. O runner pula as execuções que já têm arquivo `.json` ou `.falha`, de modo que a coleta é retomável.
+Os experimentos foram executados no Google Colab com o notebook `notebooks/executar_experimentos.ipynb`: ele instala as versões fixas das ferramentas (ver `requirements.txt`), obtém o código deste repositório, monta o Google Drive e chama `common/runner.py`. Os conjuntos de dados, as ferramentas e as sementes são definidos na primeira célula. O runner pula as execuções que já têm arquivo `.json` ou `.falha`, de modo que a coleta é retomável, e o próprio notebook traz as instruções para dar continuidade ao estudo (novos conjuntos de dados ou novas ferramentas).
 
 ## Observações importantes
 - **Medição de memória:** na primeira etapa da coleta (8 conjuntos), as ferramentas rodaram no mesmo processo, e o aumento de RAM registrado cresce com a ordem de execução. Por isso, as análises de memória usam somente as 29 execuções feitas em processo isolado (runner com um processo por execução); a lista das execuções não isoladas está em `resultados/rodada2_execucoes_nao_isoladas.txt`.
