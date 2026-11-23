@@ -1,4 +1,4 @@
-# Análise final — guia para a monografia (12 datasets)
+# Análise final — resultados e leitura (12 datasets)
 
 Estudo: 4 ferramentas AutoML × **12 datasets** × 5 seeds (42–46), orçamento de 300 s, Colab gratuito. **217 de 240 execuções válidas** (18 falharam e 5 não foram tentadas). Etapa inicial: 8 datasets (158/160); etapa de ampliação: +4 datasets (Kin8nm, News Popularity, Santander, Black Friday; 59/80). Tudo é regerado por `common/analise_final.py` e `common/analise_brazilian.py` a partir de `resultados/`. A análise anterior (8 datasets) está preservada em `analise_final_8datasets_backup/`.
 
@@ -60,9 +60,9 @@ Leitura dos resultados: **H2O, FLAML e AutoGluon são tecnicamente empatados**; 
     - *Alvo em log1p:* a superestimativa some e o MAE cai 52–64%, mas o RMSE **não melhora de forma consistente** (−22% na seed 44, +21% na seed 45), porque passa a ser dominado pelas linhas de R$ 1,12 milhão, que o modelo subestima. Não é uma correção geral.
     - Mesmo sem a rede, o RMSE (9.400 a 10.348) continua acima do de FLAML (6.484 e 6.723) e H2O (2.932 e 1.133) nessas seeds, então a posição do AutoGluon no ranking do Brazilian Houses não muda. Já o MAE (372 a 401) fica na mesma faixa das outras ferramentas (FLAML 230 e 317; H2O 443 e 182): o RMSE residual vem de poucas linhas extremas que as árvores subestimam. Excluindo as linhas duplicadas do teste, o RMSE das variantes fica em ≈ 6.600–7.200.
     - Limitação: 2 seeds, uma execução por variante. As variantes **não entram** no ranking principal, que segue o protocolo (configuração padrão para todas as ferramentas).
-- **Leitura para a monografia:** neste dataset o RMSE mede, principalmente, a capacidade de representar uma soma e de extrapolar com segurança para atributos extremos; isso favorece quem tem modelos lineares ou saturantes e penaliza a rede neural escolhida pelo AutoGluon. A escolha da rede, feita por uma validação sem poder de discriminação (diferença de 8% a 20% num RMSE dominado por poucas linhas), é uma **fragilidade do processo de seleção do AutoML**, não um defeito geral da ferramenta (em 6 dos 10 datasets em que obteve resultado o AutoGluon fica entre as duas melhores posições). Declare o dataset como caso especial e mantenha a análise com e sem ele.
+- **Leitura:** neste dataset o RMSE mede, principalmente, a capacidade de representar uma soma e de extrapolar com segurança para atributos extremos; isso favorece quem tem modelos lineares ou saturantes e penaliza a rede neural escolhida pelo AutoGluon. A escolha da rede, feita por uma validação sem poder de discriminação (diferença de 8% a 20% num RMSE dominado por poucas linhas), é uma **fragilidade do processo de seleção do AutoML**, não um defeito geral da ferramenta (em 6 dos 10 datasets em que obteve resultado o AutoGluon fica entre as duas melhores posições). O dataset é tratado como caso especial, e a análise é apresentada com e sem ele.
 
-## O que mudou em relação ao projeto aprovado (documentar na monografia)
+## Diferenças em relação ao projeto de pesquisa original
 1. **Repetições:** projeto previa seed 42 única; foram usadas 5 seeds (42–46), por recomendação da banca (repeated holdout / validação Monte Carlo; Aragão et al., 2025, usam 20 seeds).
 2. **Orçamento:** 600 s no piloto → **300 s** na comparação final. O piloto não entra na análise.
 3. **Ferramentas:** projeto cita AutoGluon e FLAML como base; foram adicionadas **H2O e TPOT**. Auto-sklearn **não pôde ser instalado**: v0.15.0 (última, set/2022) exige scikit-learn >= 0.24 e < 0.25, cuja compilação falhou no Python 3.13 (testado em Colab separado).
@@ -80,7 +80,7 @@ Leitura dos resultados: **H2O, FLAML e AutoGluon são tecnicamente empatados**; 
 - AutoGluon com preset `high_quality` e TPOT com parâmetros reduzidos; FLAML e H2O padrão.
 - Previsões salvas (`_pred.npz`) existem para 198 das 217 execuções válidas.
 
-## Se precisar rodar mais algo
-- **Nada é necessário para fechar a análise.**
-- Opcional: re-medir a RAM dos 8 datasets da etapa inicial em processo isolado (≈ 32 execuções, ≈ 3 h) para ter medida confiável em todos os conjuntos.
-- Opcional: AutoGluon com preset mais leve (`medium_quality`) e TPOT com mais tempo no Santander/News Popularity, para testar a hipótese de que as falhas decorrem do orçamento.
+## Possíveis continuações
+- A análise está completa com as execuções disponíveis.
+- Re-medir a RAM dos 8 datasets da etapa inicial em processo isolado (≈ 32 execuções, ≈ 3 h) para ter medida confiável em todos os conjuntos.
+- Testar o AutoGluon com preset mais leve (`medium_quality`) e TPOT com mais tempo no Santander/News Popularity, para testar a hipótese de que as falhas decorrem do orçamento.
