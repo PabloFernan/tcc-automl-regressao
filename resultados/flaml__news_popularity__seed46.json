@@ -1,0 +1,26 @@
+{
+  "framework": "flaml",
+  "versao": "2.7.0",
+  "dataset": "news_popularity",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 315.2,
+  "ram_pico_mb": 1458.9,
+  "ram_delta_mb": 752.7,
+  "rmse": 11443.924833070132,
+  "mae": 3093.9529238895834,
+  "r2": 0.022642807516414343,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 102.0,
+  "gpu_usada": true,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.14.1+cu130"
+    }
+  }
+}

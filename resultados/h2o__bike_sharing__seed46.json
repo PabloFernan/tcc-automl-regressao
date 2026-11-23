@@ -1,0 +1,26 @@
+{
+  "framework": "h2o",
+  "versao": "3.46.0.12",
+  "dataset": "bike_sharing",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 314.85,
+  "ram_pico_mb": 4149.5,
+  "ram_delta_mb": 2588.7,
+  "rmse": 38.74768001556742,
+  "mae": 24.004378839894056,
+  "r2": 0.954293357791534,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 198.0,
+  "gpu_usada": true,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.11.0+cu130"
+    }
+  }
+}

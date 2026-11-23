@@ -1,0 +1,13 @@
+﻿Dataset,Rodada,Linhas,Atributos,% categóricos,% zeros nos atributos numéricos,Cardinalidade máx. categórica
+Concrete,1,1030,8,0.0,17.18,0
+Abalone,1,4177,8,12.5,0.01,3
+Mercedes-Benz,1,4209,376,2.1,84.23,47
+Santander,2,4459,4991,0.0,96.9,0
+Wine Quality,1,6497,11,0.0,0.21,0
+Kin8nm,2,8192,8,0.0,0.0,0
+Brazilian Houses,1,10692,12,33.3,7.78,35
+Bike Sharing,1,17379,12,33.3,10.13,4
+California Housing,1,20640,8,0.0,0.0,0
+News Popularity,2,39644,59,0.0,28.2,0
+Diamonds,1,53940,9,33.3,0.01,8
+Black Friday,2,166821,9,44.4,14.5,7

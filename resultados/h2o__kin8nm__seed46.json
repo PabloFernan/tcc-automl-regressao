@@ -1,0 +1,26 @@
+{
+  "framework": "h2o",
+  "versao": "3.46.0.12",
+  "dataset": "kin8nm",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 313.12,
+  "ram_pico_mb": 2148.6,
+  "ram_delta_mb": 1495.7,
+  "rmse": 0.0969318121821253,
+  "mae": 0.07450886314878055,
+  "r2": 0.8682195533414633,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 208.0,
+  "gpu_usada": true,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.14.1+cu130"
+    }
+  }
+}

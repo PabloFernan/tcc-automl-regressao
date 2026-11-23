@@ -1,0 +1,8 @@
+{
+  "framework": "autogluon",
+  "dataset": "santander",
+  "seed": 43,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 1200.2,
+  "erro": "excedeu o limite rígido de 1200 s e foi encerrado | "
+}

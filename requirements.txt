@@ -1,0 +1,17 @@
+# Versões usadas nos experimentos (Python 3.13)
+autogluon.tabular==1.5.0
+flaml==2.7.0
+h2o==3.46.0.12
+tpot==1.1.0
+scikit-learn==1.6.1
+pandas==2.2.3
+numpy==2.3.5
+scipy==1.16.3
+lightgbm==4.6.0
+xgboost==3.4.1
+catboost==1.2.10
+psutil
+# PyTorch: 2.11.0 (primeiros 8 conjuntos) e 2.14.1 (4 últimos), conforme resultados/ambiente*.json
+# Análise e figuras
+matplotlib
+openpyxl

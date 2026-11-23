@@ -1,0 +1,26 @@
+{
+  "framework": "flaml",
+  "versao": "2.7.0",
+  "dataset": "brazilian_houses",
+  "seed": 44,
+  "budget_s": 300,
+  "tempo_real_s": 301.55,
+  "ram_pico_mb": 2070.7,
+  "ram_delta_mb": 437.2,
+  "rmse": 6484.294895454862,
+  "mae": 229.98092876276283,
+  "r2": 0.9351341901522984,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 0.0,
+  "gpu_usada": false,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.11.0+cu130"
+    }
+  }
+}

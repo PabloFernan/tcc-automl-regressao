@@ -1,0 +1,8 @@
+{
+  "framework": "tpot",
+  "dataset": "news_popularity",
+  "seed": 43,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 316.9,
+  "erro": "No individuals could be evaluated in the initial population as the max_eval_mins time limit was reached before any individuals could be evaluated."
+}

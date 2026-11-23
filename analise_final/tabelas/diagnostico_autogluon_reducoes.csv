@@ -1,0 +1,5 @@
+﻿seed,variante,RMSE: variação vs base (%),MAE: variação vs base (%),Maior superestimativa: base → variante (R$)
+44,Sem rede neural e KNN,-37.8,-69.5,730.803 → 4.004
+44,Alvo em log1p,-21.6,-64.3,730.803 → 2.982
+45,Sem rede neural e KNN,-32.0,-69.0,635.162 → 890
+45,Alvo em log1p,20.9,-52.2,635.162 → 1.265

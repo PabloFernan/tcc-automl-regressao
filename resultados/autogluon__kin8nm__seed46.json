@@ -1,0 +1,26 @@
+{
+  "framework": "autogluon",
+  "versao": "1.5.0",
+  "dataset": "kin8nm",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 321.78,
+  "ram_pico_mb": 1373.4,
+  "ram_delta_mb": 720.7,
+  "rmse": 0.08455772048949618,
+  "mae": 0.06509610379431979,
+  "r2": 0.8997175710725431,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 0.0,
+  "gpu_usada": false,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.14.1+cu130"
+    }
+  }
+}

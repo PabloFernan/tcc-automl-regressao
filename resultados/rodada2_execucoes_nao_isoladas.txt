@@ -1,0 +1,32 @@
+# Execuções da rodada 2 feitas na 1ª sessão do Colab, quando as ferramentas ainda rodavam no mesmo processo (runner v1).
+# Para a análise de RAM, a rodada 1 (8 datasets) e estas execuções têm o 'aumento de RAM' contaminado pela ordem de execução.
+autogluon__black_friday__seed42.json
+autogluon__black_friday__seed43.json
+autogluon__kin8nm__seed42.json
+autogluon__kin8nm__seed43.json
+autogluon__kin8nm__seed44.json
+flaml__black_friday__seed42.json
+flaml__black_friday__seed43.json
+flaml__kin8nm__seed42.json
+flaml__kin8nm__seed43.json
+flaml__kin8nm__seed44.json
+flaml__news_popularity__seed42.json
+flaml__news_popularity__seed43.json
+flaml__news_popularity__seed44.json
+flaml__santander__seed42.json
+flaml__santander__seed43.json
+flaml__santander__seed44.json
+h2o__black_friday__seed42.json
+h2o__black_friday__seed43.json
+h2o__kin8nm__seed42.json
+h2o__kin8nm__seed43.json
+h2o__kin8nm__seed44.json
+h2o__news_popularity__seed42.json
+h2o__news_popularity__seed43.json
+h2o__news_popularity__seed44.json
+h2o__santander__seed42.json
+h2o__santander__seed43.json
+tpot__kin8nm__seed42.json
+tpot__kin8nm__seed43.json
+tpot__kin8nm__seed44.json
+tpot__news_popularity__seed42.json

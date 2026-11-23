@@ -1,0 +1,14 @@
+﻿,AutoGluon,FLAML,H2O AutoML,TPOT
+Concrete,5,5,5,5
+Abalone,5,5,5,5
+Mercedes-Benz,5,5,5,4
+Santander,0,5,5,0
+Wine Quality,5,5,5,5
+Kin8nm,5,5,5,5
+Brazilian Houses,5,5,5,5
+Bike Sharing,5,5,5,5
+California Housing,5,5,5,5
+News Popularity,0,5,5,2
+Diamonds,5,5,5,4
+Black Friday,4,5,5,3
+Total,49,60,60,48

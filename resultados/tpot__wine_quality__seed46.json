@@ -1,0 +1,26 @@
+{
+  "framework": "tpot",
+  "versao": "1.1.0",
+  "dataset": "wine_quality",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 383.56,
+  "ram_pico_mb": 4016.1,
+  "ram_delta_mb": 2655.5,
+  "rmse": 0.703476153785002,
+  "mae": 0.5266226200232912,
+  "r2": 0.38363140354266023,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 0.0,
+  "gpu_usada": false,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.11.0+cu130"
+    }
+  }
+}

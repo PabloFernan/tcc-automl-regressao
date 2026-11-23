@@ -1,0 +1,26 @@
+{
+  "framework": "tpot",
+  "versao": "1.1.0",
+  "dataset": "mercedes",
+  "seed": 43,
+  "budget_s": 300,
+  "tempo_real_s": 329.68,
+  "ram_pico_mb": 4075.4,
+  "ram_delta_mb": 1916.2,
+  "rmse": 8.744475140213646,
+  "mae": 5.853506808858334,
+  "r2": 0.49940963574587705,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 0.0,
+  "gpu_usada": false,
+  "ambiente": {
+    "python": "3.13.15",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.11.0+cu128"
+    }
+  }
+}

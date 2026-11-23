@@ -1,0 +1,8 @@
+{
+  "framework": "tpot",
+  "dataset": "santander",
+  "seed": 42,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 324.8,
+  "erro": "No individuals could be evaluated in the initial population as the max_eval_mins time limit was reached before any individuals could be evaluated."
+}

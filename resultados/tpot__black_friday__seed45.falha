@@ -1,0 +1,8 @@
+{
+  "framework": "tpot",
+  "dataset": "black_friday",
+  "seed": 45,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 333.6,
+  "erro": "No individuals could be evaluated in the initial population as the max_eval_mins time limit was reached before any individuals could be evaluated."
+}

@@ -1,0 +1,8 @@
+{
+  "framework": "autogluon",
+  "dataset": "black_friday",
+  "seed": 45,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 58.0,
+  "erro": "Learner is already fit."
+}

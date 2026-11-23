@@ -1,0 +1,12 @@
+﻿,AutoGluon,FLAML,H2O AutoML,TPOT
+Ranking médio RMSE,2.375,2.333,2.0,3.292
+Ranking médio MAE,2.292,2.083,2.083,3.542
+Ranking médio R²,2.292,2.333,1.917,3.458
+"Vezes em 1º (RMSE, de 12)",4.0,1.0,5.0,2.0
+RMSE relativo ao melhor (média geométrica),1.24,1.113,1.045,1.528
+"idem, sem Brazilian Houses",1.005,1.037,1.05,1.393
+CV mediano do RMSE entre seeds (%),3.482,4.658,3.5,15.829
+Tempo médio (s),329.288,330.987,319.433,349.811
+"Aumento de RAM mediano, só execuções isoladas (MB)",681.95,835.7,1611.35,1366.5
+Execuções com uso real de GPU,0.0,0.0,60.0,0.0
+Execuções válidas,49.0,60.0,60.0,48.0

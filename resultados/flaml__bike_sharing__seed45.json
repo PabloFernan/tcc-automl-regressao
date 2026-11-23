@@ -1,0 +1,26 @@
+{
+  "framework": "flaml",
+  "versao": "2.7.0",
+  "dataset": "bike_sharing",
+  "seed": 45,
+  "budget_s": 300,
+  "tempo_real_s": 306.61,
+  "ram_pico_mb": 2528.4,
+  "ram_delta_mb": 377.9,
+  "rmse": 38.82349224122796,
+  "mae": 23.834489822387695,
+  "r2": 0.9546338319778442,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 0.0,
+  "gpu_usada": false,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.11.0+cu130"
+    }
+  }
+}

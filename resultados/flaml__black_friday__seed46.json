@@ -1,0 +1,26 @@
+{
+  "framework": "flaml",
+  "versao": "2.7.0",
+  "dataset": "black_friday",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_real_s": 345.13,
+  "ram_pico_mb": 1568.0,
+  "ram_delta_mb": 891.2,
+  "rmse": 3453.0739928359485,
+  "mae": 2665.69384765625,
+  "r2": 0.5370446443557739,
+  "gpu_disponivel": true,
+  "gpu_usada_mb": 102.0,
+  "gpu_usada": true,
+  "ambiente": {
+    "python": "3.13.16",
+    "cpus": 2,
+    "ram_total_gb": 12.67,
+    "gpu": {
+      "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+      "torch_cuda": true,
+      "torch_build": "2.14.1+cu130"
+    }
+  }
+}

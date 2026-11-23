@@ -1,0 +1,26 @@
+{
+  "python": "3.13.16",
+  "so": "Linux-6.6.159+-x86_64-with-glibc2.39",
+  "cpus": 2,
+  "ram_total_gb": 12.67,
+  "gpu": {
+    "nvidia_smi": "Tesla T4, 15360 MiB, 580.82.07",
+    "torch_cuda": true,
+    "torch_build": "2.14.1+cu130"
+  },
+  "gpu_disponivel": true,
+  "versoes": {
+    "autogluon.tabular": "1.5.0",
+    "flaml": "2.7.0",
+    "h2o": "3.46.0.12",
+    "tpot": "1.1.0",
+    "scikit-learn": "1.6.1",
+    "pandas": "2.2.3",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "torch": "2.14.1+cu130",
+    "lightgbm": "4.6.0",
+    "xgboost": "3.4.1",
+    "catboost": "1.2.10"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "framework": "autogluon",
+  "dataset": "news_popularity",
+  "seed": 46,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 0,
+  "tipo": "nao_executada",
+  "erro": "NÃO EXECUTADA: falhou nas 3 sementes anteriores (42-44); omitida para poupar tempo"
+}

@@ -1,0 +1,14 @@
+﻿,AutoGluon,FLAML,H2O AutoML,TPOT
+Concrete,1.0,2.0,3.0,4.0
+Abalone,1.0,4.0,2.0,3.0
+Mercedes-Benz,3.0,2.0,4.0,1.0
+Santander,3.5,2.0,1.0,3.5
+Wine Quality,3.0,2.0,1.0,4.0
+Kin8nm,1.0,2.0,3.0,4.0
+Brazilian Houses,4.0,2.0,1.0,3.0
+Bike Sharing,1.0,3.0,2.0,4.0
+California Housing,2.0,3.0,1.0,4.0
+News Popularity,4.0,2.0,3.0,1.0
+Diamonds,2.0,3.0,1.0,4.0
+Black Friday,3.0,1.0,2.0,4.0
+Ranking médio,2.375,2.3333333333333335,2.0,3.2916666666666665

@@ -1,0 +1,8 @@
+{
+  "framework": "autogluon",
+  "dataset": "news_popularity",
+  "seed": 45,
+  "budget_s": 300,
+  "tempo_ate_falhar_s": 1341.9,
+  "erro": "Not enough time left to train models for the full fit. Consider specifying a larger time_limit or setting `dynamic_stacking=False`. Time remaining: -903.52s"
+}
